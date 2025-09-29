@@ -31,6 +31,22 @@ folder.
 |----------|---------|---------------------------|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | `scp575` | `575`   | `575 <player> <duration>` | Remote admin access | Can be used after the round has started to spawn an instance of SCP-575 on a player. This instance will chase the player for the given duration. |
 
+# Gameplay videos
+
+Don't expect high quality, I compressed the videos.
+
+**SCP-575 disappears due to being in a lighted room**
+
+https://user-images.githubusercontent.com/36207738/213876283-ebdc666a-b313-421a-be9a-a52a524b667c.mp4
+
+**SCP-575 chasing and killing his victim**
+
+https://user-images.githubusercontent.com/36207738/213876270-b5333790-a3ed-462a-9e48-809bb9b982d5.mp4
+
+**SCP-575 disappears due to being pointed at with a flashlight for too long**
+
+https://user-images.githubusercontent.com/36207738/213876508-e25d35c8-0a54-4613-8634-2ecb53d6b7e2.mp4
+
 # Config
 
 | Config                                     | Default     | Meaning                                                                                                                                                        |
@@ -70,22 +86,6 @@ folder.
 | `scp575.light_points`                      | `30`        | Every 0.5 seconds, for each player shining a flashlight on SCP-575 a point is added. If it exceeds this treshold, SCP-575 will disappear.                      |
 | `scp575.use_light_points`                  | `true`      | Whether SCP-575 can be defeated by shining flashlights on it.                                                                                                  |
 | `command_responses`                        | ...         | Responses used for commands.                                                                                                                                   |
-
-# Gameplay videos
-
-Don't expect high quality, I compressed the videos.
-
-**SCP-575 disappears due to being in a lighted room**
-
-https://user-images.githubusercontent.com/36207738/213876283-ebdc666a-b313-421a-be9a-a52a524b667c.mp4
-
-**SCP-575 chasing and killing his victim**
-
-https://user-images.githubusercontent.com/36207738/213876270-b5333790-a3ed-462a-9e48-809bb9b982d5.mp4
-
-**SCP-575 disappears due to being pointed at with a flashlight for too long**
-
-https://user-images.githubusercontent.com/36207738/213876508-e25d35c8-0a54-4613-8634-2ecb53d6b7e2.mp4
 
 # Credits
 
