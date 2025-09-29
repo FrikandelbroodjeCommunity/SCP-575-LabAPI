@@ -44,14 +44,12 @@ public class LightsComponent : MonoBehaviour
 
             if (!Physics.Linecast(dummyPos, player.Position, VisionInformation.VisionLayerMask))
             {
-                Logger.Info("Player is looking at scp-575");
                 Score++;
             }
         }
 
         if (Score >= Config.Scp575.LightPoints)
         {
-            Logger.Info("Threshold reached");
             Npc.Destroy(DestroyReason.Cleanup);
         }
     }

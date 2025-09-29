@@ -47,25 +47,24 @@ public static class EventHandler
                 return;
             }
 
-            Logger.Info("SCP-575 will spawn in this round");
             _blackoutHandler = Timing.RunCoroutine(Blackout());
         });
     }
 
     private static IEnumerator<float> Blackout()
     {
-        // if (Config.BlackOut.RandomInitialDelay)
-        // {
-        //     var delay = Random.Next((int)Config.BlackOut.InitialMinDelay, (int)Config.BlackOut.InitialMaxDelay);
-        //
-        //     Logger.Debug($"{nameof(Blackout)}: Random delay activated, waiting for {delay} seconds", Config.DebugMode);
-        //     yield return Timing.WaitForSeconds(delay);
-        // }
-        // else
-        // {
-        //     Logger.Debug($"{nameof(Blackout)}: Waiting for {Config.BlackOut.InitialDelay} seconds", Config.DebugMode);
-        //     yield return Timing.WaitForSeconds(Config.BlackOut.InitialDelay);
-        // }
+        if (Config.BlackOut.RandomInitialDelay)
+        {
+            var delay = Random.Next((int)Config.BlackOut.InitialMinDelay, (int)Config.BlackOut.InitialMaxDelay);
+        
+            Logger.Debug($"{nameof(Blackout)}: Random delay activated, waiting for {delay} seconds", Config.DebugMode);
+            yield return Timing.WaitForSeconds(delay);
+        }
+        else
+        {
+            Logger.Debug($"{nameof(Blackout)}: Waiting for {Config.BlackOut.InitialDelay} seconds", Config.DebugMode);
+            yield return Timing.WaitForSeconds(Config.BlackOut.InitialDelay);
+        }
 
         while (Round.IsRoundStarted)
         {

@@ -37,8 +37,6 @@ public static class BlackoutExtensions
     /// <param name="scp173">Flag indicating if SCP-173 behavior should be considered.</param>
     public static void StartBlackout(float duration, bool scp173 = false)
     {
-        Logger.Info("Starting a blackout");
-
         // Clear the list of affected lights from the previous blackout.
         ZonesAffected.Clear();
 
@@ -121,9 +119,7 @@ public static class BlackoutExtensions
                 Logger.Debug($"{nameof(SpawnScp575)}: victim victim not found.", EntryPoint.Instance.Config.DebugMode);
                 return;
             }
-
-            Logger.Info($"Starting to spawn SCP-757 on {victim.LogName}");
-
+            
             var dummy = NpcSystem.CreateHiddenDummy(Config.Scp575.Nickname);
             dummy.SetRole(Config.Scp575.RoleType);
             dummy.ReferenceHub.nicknameSync.ShownPlayerInfo &= ~PlayerInfoArea.Role;
@@ -194,7 +190,6 @@ public static class BlackoutExtensions
 
     private static void AddFollowComponent(Player player, Player victim, float duration)
     {
-        Logger.Info("Setting up following component");
         var scp575 = new FollowingNpc(player, victim)
         {
             WalkSpeed = Config.Scp575.MovementSpeed,
