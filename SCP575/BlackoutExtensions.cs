@@ -143,6 +143,8 @@ public static class BlackoutExtensions
 
                 var room = victim.Room;
 
+                dummy.IsGodModeEnabled = true;
+                
                 if (room.Name == RoomName.Lcz173)
                 {
                     dummy.Position = room.Position + new Vector3(0f, 13.5f, 0f);
