@@ -25,6 +25,11 @@ Install the dependencies listed above, and place
 the [latest release](https://github.com/gamendegamer321/CameraSystem-LabAPI/releases/latest) in the LabAPI plugin
 folder.
 
+When playing audio is enabled in the Config, it will search for audio files using the FrikanUtils File System.
+Instructions on how to add files are included in
+the [README of the audio module](https://github.com/FrikandelbroodjeCommunity/FrikanUtils/blob/1.1.0/FrikanUtils-Audio/README.md#adding-audio-files).
+Make sure the full file name matches the one you set in the configuration (default is `Chase.ogg`).
+
 # Commands
 
 | command  | Aliases | Usage                     | Required permission | Description                                                                                                                                      |
@@ -89,4 +94,5 @@ https://user-images.githubusercontent.com/36207738/213876508-e25d35c8-0a54-4613-
 
 # Credits
 
-If you use any part of the code to create your own version of this plugin or pets, please remember to credit the original author.
+If you use any part of the code to create your own version of this plugin or pets, please remember to credit the
+original author.
