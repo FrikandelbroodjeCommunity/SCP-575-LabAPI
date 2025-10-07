@@ -252,10 +252,10 @@ public class Scp575Config
     /// <summary>
     /// This is complicated to explain, so I'll just tell you what I do in the code.
     /// If a player has a flashlight on and points it at SCP-575 I fire a ray of light that if it touches SCP-575 adds a point of light,
-    /// when it reaches a certain point of light SCP-575 disappears. The coroutine that checks these points is executed every 0.1s.
+    /// when it reaches a certain point of light SCP-575 disappears. The coroutine that checks these points is executed every 0.5s.
     /// </summary>
-    [Description("This is complicated to explain, so I'll just tell you what I do in the code. If a player has a flashlight on and points it at SCP-575 I fire a ray of light that if it touches SCP-575 adds a point of light, when it reaches a certain point of light SCP-575 disappears. The coroutine that checks these points is executed every 0.1s.")]
-    public int LightPoints { get; set; } = 30;
+    [Description("This is complicated to explain, so I'll just tell you what I do in the code. If a player has a flashlight on and points it at SCP-575 I fire a ray of light that if it touches SCP-575 adds a point of light, when it reaches a certain point of light SCP-575 disappears. The coroutine that checks these points is executed every 0.5s.")]
+    public int LightPoints { get; set; } = 20;
 
     [Description("Whether to use the light points system above")]
     public bool UseLightPoints { get; set; } = true;
