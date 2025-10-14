@@ -14,7 +14,7 @@ public class EntryPoint : Plugin<Config>
     public override string Name => "SCP-575";
     public override string Description => "Add SCP-575 as an NPC that pursues players.";
     public override string Author => "SrLicht";
-    public override Version Version => new(1, 0, 1);
+    public override Version Version => new(1, 0, 2);
     public override Version RequiredApiVersion => LabApiProperties.CurrentVersion;
 
     public static EntryPoint Instance { get; private set; }

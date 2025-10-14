@@ -61,9 +61,6 @@
         <Reference Include="FrikanUtils">
             <HintPath>$(SL_DEPENDENCIES)\FrikanUtils.dll</HintPath>
         </Reference>
-        <Reference Include="FrikanUtils-Audio">
-            <HintPath>$(SL_DEPENDENCIES)\FrikanUtils_Audio.dll</HintPath>
-        </Reference>
         <Reference Include="LabApi, Version=1.1.3.0, Culture=neutral, processorArchitecture=Amd64">
             <HintPath>..\packages\Northwood.LabAPI.1.1.3\lib\net48\LabApi.dll</HintPath>
         </Reference>
@@ -94,13 +91,13 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="BlackoutExtensions.cs" />
-        <Compile Include="CheckerComponent.cs" />
-        <Compile Include="Command\MainCommand.cs" />
+        <Compile Include="BlackoutExtensions.cs"/>
+        <Compile Include="CheckerComponent.cs"/>
+        <Compile Include="Command\MainCommand.cs"/>
         <Compile Include="Config.cs"/>
-        <Compile Include="EntryPoint.cs" />
-        <Compile Include="EventHandler.cs" />
-        <Compile Include="LightsComponent.cs" />
+        <Compile Include="EntryPoint.cs"/>
+        <Compile Include="EventHandler.cs"/>
+        <Compile Include="LightsComponent.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <ItemGroup>
