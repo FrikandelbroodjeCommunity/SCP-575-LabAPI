@@ -19,6 +19,7 @@ SCP-575 will disappear, for now.
 > [!IMPORTANT]
 > **Required dependencies:**
 > - [FrikanUtils](https://github.com/FrikandelbroodjeCommunity/FrikanUtils/blob/master/FrikanUtils/README.md)
+> - [FrikanUtils-Audio](https://github.com/FrikandelbroodjeCommunity/FrikanUtils/blob/master/FrikanUtils-Audio/README.md)
 > - [NVorbis](https://github.com/NVorbis/NVorbis/releases/tag/v0.10.5)
 
 Install the dependencies listed above, and place
