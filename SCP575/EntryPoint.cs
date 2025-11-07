@@ -15,7 +15,7 @@ public class EntryPoint : Plugin<Config>
     public override string Description => "Add SCP-575 as an NPC that pursues players.";
     public override string Author => "SrLicht";
     public override Version Version => new(1, 0, 2);
-    public override Version RequiredApiVersion => LabApiProperties.CurrentVersion;
+    public override Version RequiredApiVersion => new(LabApiProperties.CompiledVersion);
 
     public static EntryPoint Instance { get; private set; }
 
@@ -24,7 +24,7 @@ public class EntryPoint : Plugin<Config>
     public override void Enable()
     {
         Instance = this;
-        
+
         if (Config.Scp575.UseLightPoints)
         {
             Component = new GameObject().AddComponent<LightsComponent>();
