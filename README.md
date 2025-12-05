@@ -20,14 +20,14 @@ SCP-575 will disappear, for now.
 > **Required dependencies:**
 > - [FrikanUtils](https://github.com/FrikandelbroodjeCommunity/FrikanUtils/blob/master/FrikanUtils/README.md)
 > - [FrikanUtils-Audio](https://github.com/FrikandelbroodjeCommunity/FrikanUtils/blob/master/FrikanUtils-Audio/README.md)
-> - [NVorbis](https://github.com/NVorbis/NVorbis/releases/tag/v0.10.5)
+> - [NVorbis](https://github.com/NVorbis/NVorbis/releases/tag/v0.10.5) (Place in the dependencies folder `LabAPI/dependencies/{port/global}`)
 
 Install the dependencies listed above, and place
 the [latest release](https://github.com/gamendegamer321/CameraSystem-LabAPI/releases/latest) in the LabAPI plugin
 folder.
 
 By default, it will search for the audio files specified in the [config](#config) in
-the `Configs/{port/global}/FrikanUtils/Audio` folder.
+the `LabAPI/configs/{port/global}/FrikanUtils/Audio` folder.
 
 Make sure the full file name matches the one you set in the configuration (default is `Chase.ogg`).
 
