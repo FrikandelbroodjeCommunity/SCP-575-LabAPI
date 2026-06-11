@@ -129,8 +129,7 @@ public class BlackoutConfig
     /// </summary>
     [Description("Configuration for C.A.S.S.I.E messages before starting the blackout.")]
     public CassieMessage Cassie { get; set; } = new(
-        "facility power system failure in 3 . pitch_.80 2 . pitch_.60 1 . pitch_.49 . .g1 pitch_.42  .g2 pitch_.31  .g5",
-        false, true, false);
+        "facility power system failure in 3 . pitch_.80 2 . pitch_.60 1 . pitch_.49 . .g1 pitch_.42  .g2 pitch_.31  .g5");
 
     /// <summary>
     /// Gets or sets the delay after Cassie's announcement before the blackout starts.
@@ -313,7 +312,7 @@ public class CassieMessage
     /// <summary>
     /// Initializes a new instance of the <see cref="CassieMessage"/> class with default values.
     /// </summary>
-    public CassieMessage() : this(string.Empty, false, true, false)
+    public CassieMessage() : this(string.Empty)
     {
     }
 
@@ -321,15 +320,9 @@ public class CassieMessage
     /// Initializes a new instance of the <see cref="CassieMessage"/> class with specified parameters.
     /// </summary>
     /// <param name="message">The message to be reproduced.</param>
-    /// <param name="isHeld">Indicates whether C.A.S.S.I.E has to hold the message.</param>
-    /// <param name="isNoisy">Indicates whether C.A.S.S.I.E has to make noises during the message.</param>
-    /// <param name="isSubtitle">Indicates whether C.A.S.S.I.E has to display subtitles.</param>
-    public CassieMessage(string message, bool isHeld, bool isNoisy, bool isSubtitle)
+    public CassieMessage(string message)
     {
         Message = message;
-        IsHeld = isHeld;
-        IsNoisy = isNoisy;
-        IsSubtitle = isSubtitle;
     }
 
     /// <summary>
@@ -337,22 +330,4 @@ public class CassieMessage
     /// </summary>
     [Description("The message to be reproduced.")]
     public string Message { get; set; }
-
-    /// <summary>
-    /// Gets or sets whether C.A.S.S.I.E has to hold the message.
-    /// </summary>
-    [Description("Indicates whether C.A.S.S.I.E has to hold the message.")]
-    public bool IsHeld { get; set; }
-
-    /// <summary>
-    /// Gets or sets whether C.A.S.S.I.E has to make noises during the message.
-    /// </summary>
-    [Description("Indicates whether C.A.S.S.I.E has to make noises during the message.")]
-    public bool IsNoisy { get; set; }
-
-    /// <summary>
-    /// Gets or sets whether C.A.S.S.I.E has to display subtitles.
-    /// </summary>
-    [Description("Indicates whether C.A.S.S.I.E has to display subtitles.")]
-    public bool IsSubtitle { get; set; }
 }

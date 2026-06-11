@@ -73,12 +73,11 @@ public static class EventHandler
                 (float)Random.NextDouble() * (Config.BlackOut.MaxDuration - Config.BlackOut.MinDuration) +
                 Config.BlackOut.MinDuration;
 
-            if (!string.IsNullOrEmpty(Config.BlackOut.Cassie?.Message) && Config.BlackOut.Cassie != null)
+            if (!string.IsNullOrEmpty(Config.BlackOut.Cassie?.Message))
             {
                 // Send Cassie's message to everyone
 
-                RespawnEffectsController.PlayCassieAnnouncement(Config.BlackOut.Cassie?.Message,
-                    Config.BlackOut.Cassie.IsHeld, Config.BlackOut.Cassie.IsNoisy, Config.BlackOut.Cassie.IsSubtitle);
+                Announcer.Message(Config.BlackOut.Cassie?.Message, "");
             }
 
             // Wait for Cassie to finish speaking
